@@ -1,0 +1,14 @@
+#!/bin/bash
+echo introduce unua opcion
+read opcion
+
+while [[ "$opcion" != "q" ]]
+do
+
+        if [ $opcion == lp ];
+        then
+                cut -d',' -f7,8 cities.csv
+        fi
+        echo introduce una opcion
+        read opcion
+done
